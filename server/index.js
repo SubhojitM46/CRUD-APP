@@ -9,7 +9,11 @@ const app=express()
 dotenv.config()
 
 app.use(bodyParser.json({extended:true}))
-app.use(cors())
+app.use(cors(
+  origin:["https://crud-app-sigma-pink.vercel.app/],
+  methods:["POST","GET"],
+  credentials:true
+))
 app.use("/",routes)
 
 const PORT=8000
