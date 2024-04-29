@@ -10,7 +10,7 @@ dotenv.config()
 
 app.use(bodyParser.json({extended:true}))
 app.use(cors(
-  origin:["https://crud-app-sigma-pink.vercel.app/],
+  origin:["https://crud-app-sigma-pink.vercel.app/"],
   methods:["POST","GET"],
   credentials:true
 ))
