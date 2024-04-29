@@ -1,5 +1,5 @@
 import axios from 'axios'
-const URL="http://localhost:8000"
+const URL="https://crud-app-server-pi.vercel.app/"
 export const addUser=async (data)=>{
     try{
         return await axios.post(`${URL}/add`,data);
